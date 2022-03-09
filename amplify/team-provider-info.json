@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-teyvatfoodguide-dev-95725-authRole",
+      "UnauthRoleArn": "arn:aws:iam::699129851610:role/amplify-teyvatfoodguide-dev-95725-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::699129851610:role/amplify-teyvatfoodguide-dev-95725-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-teyvatfoodguide-dev-95725-deployment",
+      "UnauthRoleName": "amplify-teyvatfoodguide-dev-95725-unauthRole",
+      "StackName": "amplify-teyvatfoodguide-dev-95725",
+      "StackId": "arn:aws:cloudformation:us-east-1:699129851610:stack/amplify-teyvatfoodguide-dev-95725/3e98cc10-9fb9-11ec-b3ff-0ecc87e1605b",
+      "AmplifyAppId": "d19nnhnxiv0y8a"
+    }
+  }
+}

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { View, useTheme, Card, Flex } from '@aws-amplify/ui-react';
 import styled from 'styled-components';
-import { IconPerson } from '@aws-amplify/ui-react';
+import { Image, ScrollView } from '@aws-amplify/ui-react';
+
 function Main() {
   const { tokens } = useTheme();
   return (
