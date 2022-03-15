@@ -1,0 +1,107 @@
+[
+    {
+        "foodtype": "SPECIALTY",
+        "foodref": "",
+        "name": {
+            "zh": "",
+            "en": ""
+        },
+        "rarity": 0,
+        "category": "",
+        "basedish": "",
+        "character": "",
+        "details": [
+            {
+                "description": {
+                    "zh": "",
+                    "en": ""
+                },
+                "effect": {
+                    "zh": "",
+                    "en": ""
+                }
+            }
+        ],
+        "ingredients": [
+            {
+                "count": 0,
+                "ref": ""
+            },
+            {
+                "count": 0,
+                "ref": ""
+            },
+            {
+                "count": 0,
+                "ref": ""
+            }
+        ]
+    },
+    {
+        "foodtype": "NORMAL",
+        "foodref": "",
+        "name": {
+            "zh": "",
+            "en": ""
+        },
+        "rarity": 0,
+        "category": "",
+        "details": [
+            {
+                "description": {
+                    "zh": "",
+                    "en": ""
+                },
+                "effect": {
+                    "zh": "",
+                    "en": ""
+                }
+            },
+            {
+                "description": {
+                    "zh": "",
+                    "en": ""
+                },
+                "effect": {
+                    "zh": "",
+                    "en": ""
+                }
+            },
+            {
+                "description": {
+                    "zh": "",
+                    "en": ""
+                },
+                "effect": {
+                    "zh": "",
+                    "en": ""
+                }
+            }
+        ],
+        "ingredients": [
+            {
+                "count": 0,
+                "ref": ""
+            },
+            {
+                "count": 0,
+                "ref": ""
+            },
+            {
+                "count": 0,
+                "ref": ""
+            }
+        ]
+    },
+    {
+        "ref": "",
+        "name": {
+            "zh": "",
+            "en": ""
+        },
+        "description": {
+            "zh": "",
+            "en": ""
+        }
+    }
+]

@@ -1,10 +1,28 @@
-import * as React from 'react';
-import { View, useTheme, Card, Flex } from '@aws-amplify/ui-react';
+import { useEffect, useState } from 'react';
+import { View, useTheme, Card, Flex, Image, ScrollView } from '@aws-amplify/ui-react';
 import styled from 'styled-components';
-import { Image, ScrollView } from '@aws-amplify/ui-react';
+import { API } from 'aws-amplify';
+import * as queries from '../graphql/queries';
 
 function Main() {
   const { tokens } = useTheme();
+  const [data, setData] = useState(null);
+  const [isLoaded, setInLoaded] = useState(false);
+  const [filteredData, setFilteredData] = useState(null);
+
+  const fetchDatas = async () => {
+    try {
+      const result = await API.graphql({ query: queries.getAllFoods });
+      console.log(result);
+      // setActors(actors)
+    } catch (err) {
+      console.log('error fetching actors')
+    }
+  }
+
+  useEffect(() => {
+    fetchDatas();
+  }, []);
   return (
     <Container
       backgroundColor={tokens.colors.background.tertiary}>
@@ -33,6 +51,7 @@ function Main() {
       </ContentContainer>
     </Container>
   );
+
 }
 
 const Container = styled(View)`

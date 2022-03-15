@@ -1,0 +1,181 @@
+[
+    {
+        "id": "potato",
+        "description": {
+            "en": "A chunky vegetable. A gift from the earth that you never tire of with its multitude of cooking methods.",
+            "zh": "块状的草本植物。来自大地的馈赠，是不管怎样加工都永远吃不腻的一味神奇食材。"
+        },
+        "name": {
+            "en": "Potato",
+            "zh": "土豆"
+        }
+    },
+    {
+        "id": "onion",
+        "description": {
+            "en": "A spherical vegetable. As vengeance for cutting it, it will make you cry, no matter how brave you are.",
+            "zh": "球状的草本植物。为了报复切碎它的人，不管人的心情好坏都会让他落泪。 "
+        },
+        "name": {
+            "en": "Onion",
+            "zh": "洋葱"
+        }
+    },
+    {
+        "id": "carrot",
+        "description": {
+            "en": "A healthy and nutritious vegetable that is crunchy and sweet to the taste. Easy to grow and harvest.",
+            "zh": "营养非常丰富的草本植物。易于种植与收获的作物，口感清甜爽脆。 "
+        },
+        "name": {
+            "en": "Carrot",
+            "zh": "胡萝卜"
+        }
+    },
+    {
+        "foodtype": "NORMAL",
+        "foodref": "barbatos-ratatouille",
+        "rarity": 3,
+        "category": "adventurers-dishes",
+        "details": [
+         {
+          "description": {
+           "en": "A simple chowder with a long history. The ingredients are similarly traditional and simple. No matter where you are, a piping-hot chowder of this sort can always give you a sense of real and unsurpassed satisfaction.",
+           "zh": "历史悠久的简单菜肴。虽然说风神象征着自由，但是这道菜似乎自由过了头。或许狂风乱炖菜这个名字更适合这道菜。"
+          },
+          "effect": {
+           "en": "Decreases all party members' gliding and sprinting Stamina consumption by 15% for 900s. In Co-Op Mode, this effect only applies to your own character(s).",
+           "zh": "队伍中所有角色滑翔和冲刺消耗的体力降低15%，持续900秒。多人游戏时，仅对自己的角色生效。"
+          }
+         },
+         {
+          "description": {
+           "en": "A simple chowder with a long history. The ingredients are similarly traditional and simple. No matter where you are, a piping-hot chowder of this sort can always give you a sense of real and unsurpassed satisfaction.",
+           "zh": "历史悠久的简单菜肴。用料传统而朴实。无论身处何方，这样一碗热乎乎杂烩菜所提供的满足感都是无比真实的。"
+          },
+          "effect": {
+           "en": "Decreases all party members' gliding and sprinting Stamina consumption by 20% for 900s. In Co-Op Mode, this effect only applies to your own character(s).",
+           "zh": "队伍中所有角色滑翔和冲刺消耗的体力降低20%，持续900秒。多人游戏时，仅对自己的角色生效。"
+          }
+         },
+         {
+          "description": {
+           "en": "A simple chowder with a long history. After much careful stewing, the flavors of three different vegetables have been blended to perfection. Like this, it is not hard to imagine why someone once called it \"the best chowder I've ever tasted.\"",
+           "zh": "历史悠久的简单菜肴。经过一番精心炖煮，三种蔬菜的味道融合得恰到好处。如此一来，也不难想见为何曾有人说它是「这辈子吃过的最好吃的菜肴」。"
+          },
+          "effect": {
+           "en": "Decreases all party members' gliding and sprinting Stamina consumption by 25% for 900s. In Co-Op Mode, this effect only applies to your own character(s).",
+           "zh": "队伍中所有角色滑翔和冲刺消耗的体力降低25%，持续900秒。多人游戏时，仅对自己的角色生效。"
+          }
+         }
+        ],
+        "ingredients": [
+         {
+          "count": 4,
+          "ref": "carrot"
+         },
+         {
+          "count": 4,
+          "ref": "potato"
+         },
+         {
+          "count": 4,
+          "ref": "onion"
+         }
+        ],
+        "name": {
+         "en": "Barbatos Ratatouille",
+         "zh": "风神杂烩菜"
+        }
+       },
+       {
+        "foodtype": "NORMAL",
+        "foodref": "chicken-mushroom-skewer",
+        "rarity": 1,
+        "category": "recovery-dishes",
+        "details": [
+         {
+          "description": {
+           "en": "A skewer of mushrooms and poultry. At first glance it's hard to tell which is which.",
+           "zh": ""
+          },
+          "effect": {
+           "en": "Restores 8% of Max HP and an additional 800 HP to the selected character.",
+           "zh": ""
+          }
+         },
+         {
+          "description": {
+           "en": "A skewer of mushrooms and poultry. Fresh poultry is complimented by fragrant mushrooms. Don't be picky, chow down!",
+           "zh": ""
+          },
+          "effect": {
+           "en": "Restores 9% of Max HP and an additional 1,000 HP to the selected character.",
+           "zh": ""
+          }
+         },
+         {
+          "description": {
+           "en": "A skewer of mushrooms and poultry. All the best the wild has to offer are pierced on just one stick.",
+           "zh": ""
+          },
+          "effect": {
+           "en": "Restores 10% of Max HP and an additional 1,200 HP to the selected character.",
+           "zh": ""
+          }
+         }
+        ],
+        "ingredients": [
+         {
+          "count": 1,
+          "ref": "mushroom"
+         },
+         {
+          "count": 1,
+          "ref": "fowl"
+         }
+        ],
+        "name": {
+         "en": "Chicken-Mushroom Skewer",
+         "zh": ""
+        }
+       },
+       {
+        "foodtype": "SPECIALTY",
+        "foodref": "a-buoyant-breeze",
+        "basedish": "Barbatos Ratatouille",
+        "rarity": 3,
+        "category": "adventurers-dishes",
+        "details": [
+         {
+          "description": {
+           "en": "Venti's specialty. Other than the Cecilia flowers used for decoration, the ingredients are no different from normal. But if you taste it carefully, you can taste the flavor of \"a wind that brings hope and tiny twists of fate.\" Perhaps... this is exactly what he wants.",
+           "zh": "温迪的特色料理。除却作为装饰的塞西莉亚花，用料与一般菜品并无二致。但细细品尝，便能体会出「细小的转机与希望之风」的味道。这莫非…正是他的心意？"
+          },
+          "effect": {
+           "en": "Decreases all party members' gliding and sprinting Stamina consumption by 25% for 1800s. In Co-Op Mode, this effect only applies to your own character(s).",
+           "zh": "队伍中所有角色滑翔和冲刺消耗的体力降低25%，持续1800秒。多人游戏时，仅对自己的角色生效。"
+          }
+         }
+        ],
+        "ingredients": [
+         {
+          "count": 4,
+          "ref": "carrot"
+         },
+         {
+          "count": 4,
+          "ref": "potato"
+         },
+         {
+          "count": 4,
+          "ref": "onion"
+         }
+        ],
+        "character": "Venti",
+        "name": {
+         "en": "A Buoyant Breeze",
+         "zh": "真·风神杂烩菜"
+        }
+       }
+]
