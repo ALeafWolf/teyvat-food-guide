@@ -1,31 +1,51 @@
 import { useEffect, useState } from 'react';
-import { View, useTheme, Card, Flex, Image, ScrollView } from '@aws-amplify/ui-react';
+import { View, useTheme, Card, Flex, Grid, Image, ScrollView, Text } from '@aws-amplify/ui-react';
 import styled from 'styled-components';
 import { API } from 'aws-amplify';
 import * as queries from '../graphql/queries';
+import ListSection from './ListSection';
+import DetailSection from './DetailSection';
 
 function Main() {
   const { tokens } = useTheme();
-  const [data, setData] = useState(null);
-  const [isLoaded, setInLoaded] = useState(false);
-  const [filteredData, setFilteredData] = useState(null);
+  const [fdata, setFData] = useState([]);
+  const [idata, setIData] = useState([]);
+  const [filteredFData, setFilteredFData] = useState([]);
+  const [filteredIData, setFilteredIData] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [selectedItem, setSelectedItem] = useState('');
+  const [selectedType, setSelectedType] = useState('');
 
-  const fetchDatas = async () => {
+  const fetchFoodData = async () => {
     try {
-      const result = await API.graphql({ query: queries.getAllFoods });
-      console.log(result);
-      // setActors(actors)
+      const results: any = await API.graphql({ query: queries.getAllFoods });
+      setFData(results.data.getAllFoods.foods);
+      setFilteredFData(results.data.getAllFoods.foods);
     } catch (err) {
-      console.log('error fetching actors')
+      console.log(err)
+    }
+  }
+
+  const fetchIngredientData = async () => {
+    try {
+      const results: any = await API.graphql({ query: queries.getAllIngredients });
+      setIData(results.data.getAllIngredients.ingredients);
+      setFilteredIData(results.data.getAllIngredients.ingredients);
+    } catch (err) {
+      console.log(err)
     }
   }
 
   useEffect(() => {
-    fetchDatas();
+    fetchFoodData()
+    fetchIngredientData();
+    setIsLoaded(true);
   }, []);
+
   return (
     <Container
-      backgroundColor={tokens.colors.background.tertiary}>
+      backgroundColor={tokens.colors.background.tertiary}
+      paddingTop={tokens.space.xxxl}>
       <ContentContainer
         direction={{ base: 'column', large: 'row' }}
         justifyContent='center'
@@ -38,7 +58,9 @@ function Main() {
           backgroundColor={tokens.colors.background.secondary}
           color={tokens.colors.font.primary}
         >
-          A
+          <ScrollView width='100%' height='100%' orientation="vertical">
+            <ListSection fdata={filteredFData} idata={filteredIData} setSelectedItem={setSelectedItem} setSelectedType={setSelectedType} isLoaded={isLoaded} />
+          </ScrollView>
         </Section>
         <Section
           width={{ base: '90%', large: '45%' }}
@@ -46,7 +68,8 @@ function Main() {
           backgroundColor={tokens.colors.background.secondary}
           color={tokens.colors.font.primary}
         >
-          B
+          <DetailSection selectedID={selectedItem} setSelectedID={setSelectedItem
+          } selectedType={selectedType} setSelectedType={setSelectedType}/>
         </Section>
       </ContentContainer>
     </Container>
@@ -56,7 +79,7 @@ function Main() {
 
 const Container = styled(View)`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 const ContentContainer = styled(Flex)`
@@ -69,4 +92,5 @@ const Section = styled(Card)`
   align-items: center;
   height: 75vmin;
 `;
+
 export default Main;

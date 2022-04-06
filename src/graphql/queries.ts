@@ -27,6 +27,10 @@ export const getAllFoods = /* GraphQL */ `
     getAllFoods(count: $count, nextToken: $nextToken) {
       foods {
         id
+        name {
+          zh
+          en
+        }
         category
         rarity
         type
@@ -49,6 +53,20 @@ export const getIngredient = /* GraphQL */ `
         zh
         en
       }
+    }
+  }
+`;
+export const getAllIngredients = /* GraphQL */ `
+  query GetAllIngredients($count: Int, $nextToken: String) {
+    getAllIngredients(count: $count, nextToken: $nextToken) {
+      ingredients {
+        id
+        name {
+          zh
+          en
+        }
+      }
+      nextToken
     }
   }
 `;

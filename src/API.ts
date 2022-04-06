@@ -52,6 +52,12 @@ export type Ingredient = {
   description?: MultiLangInfo | null,
 };
 
+export type PaginatedIngredients = {
+  __typename: "PaginatedIngredients",
+  ingredients:  Array<Ingredient >,
+  nextToken?: string | null,
+};
+
 export type SetFoodMutationVariables = {
   type: string,
   ref: string,
@@ -132,7 +138,7 @@ export type GetIngredientQueryVariables = {
 
 export type GetIngredientQuery = {
   // getFoodsByType(foodtype: FoodType!): Food
-  // getFoodsByCategory(category: String!, count: Int, nextToken: String): PaginatedFoods!
+  // # getFoodsByCategory(category: String!, count: Int, nextToken: String): PaginatedFoods!
   getIngredient?:  {
     __typename: "Ingredient",
     id: string,
@@ -147,4 +153,20 @@ export type GetIngredientQuery = {
       en?: string | null,
     } | null,
   } | null,
+};
+
+export type GetAllIngredientsQueryVariables = {
+  count?: number | null,
+  nextToken?: string | null,
+};
+
+export type GetAllIngredientsQuery = {
+  getAllIngredients:  {
+    __typename: "PaginatedIngredients",
+    ingredients:  Array< {
+      __typename: "Ingredient",
+      id: string,
+    } >,
+    nextToken?: string | null,
+  },
 };

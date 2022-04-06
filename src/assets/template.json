@@ -1,107 +1,94 @@
 [
     {
-        "foodtype": "SPECIALTY",
-        "foodref": "",
-        "name": {
-            "zh": "",
-            "en": ""
-        },
-        "rarity": 0,
+        "id": "",
+        "rarity": 1,
         "category": "",
+        "details": [
+            {
+                "description": {
+                    "en": "",
+                    "zh": ""
+                },
+                "effect": {
+                    "en": "",
+                    "zh": ""
+                }
+            },
+            {
+                "description": {
+                    "en": "",
+                    "zh": ""
+                },
+                "effect": {
+                    "en": "",
+                    "zh": ""
+                }
+            },
+            {
+                "description": {
+                    "en": "",
+                    "zh": ""
+                },
+                "effect": {
+                    "en": "",
+                    "zh": ""
+                }
+            }
+        ],
+        "ingredients": [
+            {
+                "count": 1,
+                "ref": ""
+            },
+            {
+                "count": 1,
+                "ref": ""
+            }
+        ],
+        "name": {
+            "en": "",
+            "zh": ""
+        },
+        "type": "NORMAL",
+        "img": [""]
+    },
+    {
+        "id": "",
         "basedish": "",
-        "character": "",
-        "details": [
-            {
-                "description": {
-                    "zh": "",
-                    "en": ""
-                },
-                "effect": {
-                    "zh": "",
-                    "en": ""
-                }
-            }
-        ],
-        "ingredients": [
-            {
-                "count": 0,
-                "ref": ""
-            },
-            {
-                "count": 0,
-                "ref": ""
-            },
-            {
-                "count": 0,
-                "ref": ""
-            }
-        ]
-    },
-    {
-        "foodtype": "NORMAL",
-        "foodref": "",
-        "name": {
-            "zh": "",
-            "en": ""
-        },
-        "rarity": 0,
+        "rarity": 1,
         "category": "",
         "details": [
-            {
-                "description": {
-                    "zh": "",
-                    "en": ""
-                },
-                "effect": {
-                    "zh": "",
-                    "en": ""
-                }
-            },
-            {
-                "description": {
-                    "zh": "",
-                    "en": ""
-                },
-                "effect": {
-                    "zh": "",
-                    "en": ""
-                }
-            },
-            {
-                "description": {
-                    "zh": "",
-                    "en": ""
-                },
-                "effect": {
-                    "zh": "",
-                    "en": ""
-                }
-            }
+         {
+          "description": {
+           "en": "",
+           "zh": ""
+          },
+          "effect": {
+           "en": "",
+           "zh": ""
+          }
+         }
         ],
         "ingredients": [
-            {
-                "count": 0,
-                "ref": ""
-            },
-            {
-                "count": 0,
-                "ref": ""
-            },
-            {
-                "count": 0,
-                "ref": ""
-            }
-        ]
-    },
-    {
-        "ref": "",
+         {
+          "count": 4,
+          "ref": ""
+         },
+         {
+          "count": 4,
+          "ref": ""
+         },
+         {
+          "count": 4,
+          "ref": ""
+         }
+        ],
+        "character": "",
         "name": {
-            "zh": "",
-            "en": ""
+         "en": "",
+         "zh": ""
         },
-        "description": {
-            "zh": "",
-            "en": ""
-        }
-    }
+        "type": "SPECIALTY",
+        "img": ["","",""]
+       }
 ]
